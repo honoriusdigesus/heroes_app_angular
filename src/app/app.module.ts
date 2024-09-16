@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()
