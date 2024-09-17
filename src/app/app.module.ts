@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     SharedModule,
     MatSlideToggleModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideAnimationsAsync()
